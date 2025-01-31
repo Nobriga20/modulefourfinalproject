@@ -8,14 +8,14 @@
 .movie__logo {
     
     max-width: 100%;
-    width: 100px;
+    width: 200px;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: 10px;
 }
 
 .header {
-    
+    font-size: 30px;
 }
 
 .logo {
@@ -103,4 +103,25 @@
 .watch-button:hover {
     background-color: #218838;
 }
+
+.browse__tag {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(6, 6, 108);
+}
+
+.input__btn {
+    max-width: 100%;
+    width: 350px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 50px;
+}
+
+.browse__list {
+    display: flex;
+    justify-content: center;
+}
+
 
