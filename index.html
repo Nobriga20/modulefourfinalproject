@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -27,8 +28,16 @@
                     <h1 class="browse__tag">Browse Our Movies</h1>
                 </div>
                 <div class="browse__list">
-                    <input class="input__btn" type="text" placeholder="Search by Movie or key word"> 
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button class="search__btn">Search</button>
+                    <div id="results"></div>
                 </div>
+                <div>
+                
+                </div>
+                <section id="card__section">
+                    <div class="container">
+                        <div class="wrapper">
                 <div class="movie-card">
                     <img src="./module 4 prject assets/avengers 1.jpg" alt="Movie Poster" class="movie-poster">
                     <div class="movie-details">
@@ -69,6 +78,10 @@
                     <p class="movie-description">Watch as earth's mightiest heroes face off against one another.</p>
                     <button class="watch-button">Watch Now</button>
                 </div>
+                </div>
+                </div>
+                </div>
+            
     </section>
     
 </body>

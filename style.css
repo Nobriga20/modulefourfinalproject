@@ -124,4 +124,19 @@
     justify-content: center;
 }
 
+.wrapper {
+    display: flex;
+    
+}
+
+.search__btn {
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: blue;
+    color: white;
+}
+
+
+
 
