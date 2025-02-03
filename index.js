@@ -1,30 +1,47 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    document.querySelector('.search__btn').addEventListener('click', fetchData);
-
-});
-
-
-async function fetchData() {
-    const query = document.getElementById('searchInput').value;
-    const url = http://www.omdbapi.com/?s=${query}&apikey=dd4916f0;
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        displayResults(data);
-    } catch (error) {
-        console.error('Error fetching data:', error);
+    document.querySelector(".search__btn").addEventListener("click", fetchData);
+   
+   });
+   
+   
+   
+   async function fetchData() {
+   
+   const query = document.getElementById("searchInput").value;
+   
+   const url = ' http://www.omdbapi.com/?s=${query}&apikey=dd4916f0'; // Corrected URL
+   
+   
+   
+   try {
+   
+   const response = await fetch(url);
+   
+   if (!response.ok) {
+   
+   throw new Error("Network response was not ok");
+   
     }
-}
-
-function displayResults(data) {
-
-    const wrapper = document.querySelector(".wrapper");
+   
+   const data = await response.json();
+   
+   displayResults(data);
+   
+    } catch (error) {
+   
+   console.error("Error fetching data:", error);
+   
+    }
+   
+   }
+   
+   
+   
+   function displayResults(data) {
+   
+   const wrapper = document.querySelector(".wrapper");
    
    
    
@@ -71,5 +88,3 @@ function displayResults(data) {
     }
    
    }
-   
-   
