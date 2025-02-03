@@ -137,6 +137,58 @@
     color: white;
 }
 
+.pagination {
+
+    margin-top: 20px;
+   
+   text-align: center;
+   
+   }
+   
+   
+   
+   .pagination-btn {
+   
+   padding: 5px 10px;
+   
+   margin: 0 5px;
+   
+   cursor: pointer;
+   
+   background-color: #007bff;
+   
+   color: white;
+   
+   border: none;
+   
+   border-radius: 5px;
+   
+   }
+   
+   
+   
+   .pagination-btn:disabled {
+   
+   cursor: not-allowed;
+   
+   opacity: 0.5;
+   
+   }
+   
+   
+   
+   .no-results {
+   
+   color: red;
+   
+   font-size: 18px;
+   
+   text-align: center;
+   
+   }
+   
+   
+
 
 
 
