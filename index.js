@@ -1,4 +1,10 @@
-document.getElementById('search__btn').addEventListener('click', fetchData);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelector('.search__btn').addEventListener('click', fetchData);
+
+});
+
 
 async function fetchData() {
     const query = document.getElementById('searchInput').value;
@@ -17,12 +23,44 @@ async function fetchData() {
 }
 
 function displayResults(data) {
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous results
+
+    const wrapper = document.querySelector('.wrapper');
+
+    wrapper.innerHTML = ''; 
+
     
-    data.items.forEach(item => {
-        const resultItem = document.createElement('div');
-        resultItem.innerText = item.title; // Adjust based on your API's data structure
-        resultsDiv.appendChild(resultItem);
-    });
+
+    if (data.Search) {
+
+        data.Search.forEach(movie => {
+
+            const movieCard = `
+
+                <div class="movie-card">
+
+                    <img src="${movie.Poster}" alt="Movie Poster" class="movie-poster">
+
+                    <div class="movie-details">
+
+                        <h2 class="movie-title">${movie.Title}</h2>
+
+                        <p class="movie-description">Released: ${movie.Year}</p>
+
+                        <button class="watch-button">Watch Now</button>
+
+                    </div>
+
+                </div>
+
+            `;
+
+            wrapper.innerHTML += movieCard;
+
+        });
+
+    }
+
 }
+
+
+
