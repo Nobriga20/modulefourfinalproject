@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchData() {
     const query = document.getElementById('searchInput').value;
-    const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=dd4916f0${encodeURIComponent(query)}`;
+    const url = http://www.omdbapi.com/?apikey=dd4916f0&s=${query};
 
     try {
         const response = await fetch(url);
