@@ -17,8 +17,8 @@ async function fetchData() {
 
 const query = document.getElementById("searchInput").value;
 
-const url = 'http://www.omdbapi.com/?s=${query}&apikey=dd4916f0';
 
+const url = `http://www.omdbapi.com/?s=${query}&apikey=dd4916f0`;
 
 
 try {
