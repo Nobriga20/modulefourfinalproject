@@ -17,7 +17,7 @@ async function fetchData() {
 
 const query = document.getElementById("searchInput").value;
 
-const url = http://www.omdbapi.com/?s=${query}&apikey=dd4916f0;
+const url = 'http://www.omdbapi.com/?s=${query}&apikey=dd4916f0';
 
 
 
@@ -165,7 +165,7 @@ displayResults(data); // Re-render results for the next page
 
 // Display a message if no results are found
 
-wrapper.innerHTML = <p class="no-results">No movies found. Try another search!</p>;
+wrapper.innerHTML = '<p class="no-results">No movies found. Try another search!</p>';
 
  }
 
